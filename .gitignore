@@ -29,5 +29,4 @@ bin/
 .DS_Store
 
 
-src/Test/
-src/Test_2.java
+src
