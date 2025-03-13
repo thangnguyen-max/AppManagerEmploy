@@ -1,15 +1,22 @@
-import java.util.ArrayList;
-import java.util.Collections;
+
+
+import java.util.Arrays;
 
 public class Test {
     public static void main(String[] args) {
-        ArrayList<Integer> list = new ArrayList<Integer>();
-        list.add(6);
-        list.add(10);
-        list.add(3);
-        list.add(30);
-        list.add(5);
-        Collections.sort(list);
-        System.out.println(list);
+        Person[] people = {
+                new Person("John", 25),
+                new Person("Jane", 30),
+                new Person("Bob", 20)
+        };
+
+        Arrays.sort(people);
+
+        for (Person person : people) {
+            System.out.println(person);
+        }
     }
 }
+
+
+

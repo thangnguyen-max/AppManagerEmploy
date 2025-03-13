@@ -137,7 +137,7 @@ public class ManagerEmploy {
                 ((Manager)listEmploy.get(i) ).calculateSalary();
                 salary[i] = ((Manager)listEmploy.get(i)).calculateSalary();
             }else if(listEmploy.get(i) instanceof Developer){
-                salary[i] = ((Developer)listEmploy.get(i)).salary;
+                salary[i] = (listEmploy.get(i)).salary;
             }
         }
         for (int i = 0; i < salary.length; i++) {
